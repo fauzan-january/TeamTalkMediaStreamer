@@ -1,0 +1,257 @@
+# TeamTalkMediaStreamer - Terjemahan bahasa Indonesia (lengkap)
+# Simpan kata dalam {tanda kurung kurawal} apa adanya;
+# Anda dapat memindahkannya ke posisi mana pun dalam kalimat.
+
+language_name = Bahasa Indonesia
+
+# Bahasa
+
+lang_set = Bahasa diubah ke {language}
+
+# Pemutaran
+
+searching = Mencari...
+loading_track = Memuat trek...
+nothing_to_play = Tidak ada yang dapat diputar. Gunakan: p <pencarian>
+play_next_usage = Tidak ada yang dapat ditambahkan ke antrean. Gunakan: pn <pencarian>
+restarting_track = Memulai ulang trek
+loading_liked = Memuat lagu yang disukai...
+nothing_playing = Tidak ada yang sedang diputar
+current_track = {track} [{index}/{total}] ({position}/{duration})\n{modes}
+search_cancelled = Pencarian dibatalkan
+
+# Volume dan posisi
+
+volume_set = Volume: {percent}%
+volume_show = Volume: {percent}% (maks: {max})
+volume_range = Volume harus 0-{max}. Diminta: {got}
+seek_forward = Maju {seconds}s
+seek_backward = Mundur {seconds}s
+seek_usage = Penggunaan: sn [detik] / sb [detik]
+
+# Antrean
+
+queue_cleared = Antrean dikosongkan
+index_starts_at_one = Indeks dimulai dari 1
+no_track_at_position = Tidak ada trek di posisi {position}
+removed = Dihapus: {name}
+queue_rm_usage = Penggunaan: q rm <nomor>
+
+# Mode
+
+mode_single_track = Mode Single Track diaktifkan
+mode_repeat_track = Mode Repeat Track diaktifkan
+mode_track_list = Mode Track List diaktifkan
+mode_repeat_track_list = Mode Repeat Track List diaktifkan
+mode_shuffle = Mode acak diaktifkan
+shuffle_off = Acak dinonaktifkan
+shuffle_usage = Penggunaan: sfl
+nothing_behind = Tidak ada trek sebelumnya.
+mode_usage = Mode saat ini: {current_mode}\nst   Single Track\nrt   Repeat Track\ntl   Track List\nrtl  Repeat Track List
+
+# Pencarian dan pemilihan
+
+search_usage = Penggunaan: src <pencarian>
+search_results_header = Hasil pencarian:
+search_results_footer = Ketik nomor untuk memutar, atau c untuk membatalkan
+pick_usage = Penggunaan: pick <nomor>
+pick_too_low = Nomor pilihan harus 1 atau lebih tinggi
+search_limit_set = Batas hasil pencarian: {limit}
+search_limit_show = Batas hasil pencarian: {limit} (rentang: 1-20)
+search_limit_range = Batas hasil pencarian harus 1-20. Diterima: {got}
+
+# Autoplay (Rekomendasi Otomatis)
+
+radio_already_on = Autoplay sudah aktif
+radio_enabled = Autoplay diaktifkan
+radio_already_off = Autoplay sudah nonaktif
+radio_disabled = Autoplay dinonaktifkan
+radio_status_on = Autoplay: AKTIF
+radio_status_off = Autoplay: NONAKTIF
+
+# Layanan
+
+already_on_service = Sudah berada di {service}
+switched_service = Beralih ke {service}
+service_not_enabled = {service} tidak diaktifkan pada bot ini
+
+# Bot
+
+about = TeamTalk Media Streamer (Rust) v{version}\nBot streaming media untuk TeamTalk. Mendukung pemutaran Spotify, YouTube dan Tautan Audio Langsung.\nDimodifikasi oleh Fauzan, S.Kom. | PT Kemenangan Digital Indonesia\nhttps://github.com/fauzan-january/TeamTalkMediaStreamer/\nPengembang sebelumnya:\nhttps://github.com/LuciferM242/ttspotify-rs
+stats = Waktu aktif: {uptime}\nTrek diputar: {tracks}\nAntrean: {queue} trek\nVolume: {volume}%
+status_idle = Ketik "gs" untuk memulai
+
+# Informasi klien (cci)
+cci_already_active = Sesi pengubahan informasi klien sedang berlangsung oleh pengguna lain.
+cci_menu = Informasi Klien Bot Saat Ini:\n• Nama Panggilan: {nick}\n• Status: {status}\n• Jenis Kelamin: {gender}\n• Nama Klien: {client_name}\n\nPilih opsi:\n1. Ubah nama panggilan\n2. Ubah status\n3. Ubah jenis kelamin\n4. Ubah nama klien\n5. Batal\nKetik angka pilihan Anda (1-5):
+cci_prompt_nick = Masukkan nama panggilan baru bot (atau ketik 'c' untuk batal):
+cci_nick_success = Nama panggilan bot berhasil diubah menjadi: {nick}
+cci_prompt_status = Masukkan status baru bot (ketik 'default' untuk mengembalikan ke status bawaan, atau 'c' untuk batal):
+cci_status_success = Status bot berhasil diubah menjadi: {status}
+cci_status_default_success = Status bot dikembalikan ke bawaan: {status}
+cci_menu_gender = Pilih jenis kelamin bot:\n1. Laki-laki (m)\n2. Perempuan (f)\n3. Netral (n)\n4. Batal\nKetik angka pilihan Anda (1-4):
+cci_gender_success = Jenis kelamin bot berhasil diubah menjadi: {gender}
+cci_prompt_client_name = Masukkan nama klien baru bot (ketik 'default' untuk mengembalikan ke nama bawaan, atau 'c' untuk batal):
+cci_client_name_success = Nama klien bot berhasil diubah menjadi: {client_name}\nCatatan: Nama klien baru akan aktif saat bot masuk kembali / restart.
+cci_client_name_default_success = Nama klien bot dikembalikan ke bawaan: {client_name}\nCatatan: Nama klien baru akan aktif saat bot masuk kembali / restart.
+cci_cancelled = Pembaruan informasi klien dibatalkan.
+cci_timeout = Batas waktu habis. Pembaruan informasi klien dibatalkan.
+cci_invalid_choice = Pilihan tidak valid. Silakan ketik angka pilihan yang sesuai.
+
+# Tautan langsung
+
+direct_link_connecting = Menghubungkan ke tautan langsung...
+direct_link_playing = Memutar tautan langsung: {name}
+direct_link_enqueued = Tautan langsung ditambahkan ke antrean: {name}
+direct_link_failed = Gagal memutar tautan langsung: {error}
+
+# Pesan reproduksi / pemutar
+
+spotify_unavailable = Spotify tidak tersedia: {error}
+no_results = Hasil tidak ditemukan
+now_playing = Sedang memutar: {track}
+now_playing_queued = Sedang memutar: {track} (+{count} diantrean{more})
+more_loading = , memuat lainnya
+queued_many = {count} trek ditambahkan ke antrean{upcoming}{more}
+queued_one = Diantrean: {track}{upcoming}{more}
+already_queued_loading_rest = Sudah di antrean, memuat sisanya
+already_in_queue = Sudah ada di antrean
+search_failed = Pencarian gagal: {error}
+radio_fetching = Autoplay: mengambil rekomendasi...
+radio_playing = Autoplay: {track}
+radio_no_recs = Autoplay: rekomendasi tidak ditemukan
+radio_failed = Autoplay gagal: {error}
+end_of_queue = Akhir dari antrean
+invalid_pick = Pilihan tidak valid atau tidak ada hasil pencarian
+channel_not_found = Saluran tidak ditemukan: {path}
+failed_to_start = Gagal memutar trek: {track}
+
+# Teks bantuan
+
+help_overview_playback = Bantuan Penggunaan Bot:\n  gs : Tampilkan pesan sambutan dan panduan awal penggunaan bot.\n  a : Tampilkan informasi bot.\n  dci : Tampilkan informasi kontak pengembang.\n  log : Tampilkan riwayat perubahan.\n  h [perintah] : Tampilkan bantuan detail penggunaan sebuah perintah (Contoh: h q). Jika tidak ada perintah lain yang disertakan, tampilkan daftar perintah yang tersedia.\n  p [judul trek / url] : Memutar trek / URL. Jika tidak ada judul trek / url yang disertakan, putar/jeda trek saat ini.\n  pn [judul trek / url] : Tambahkan trek / URL ke antrean untuk diputar berikutnya. Mengulangi perintah yang sama akan menambahkan antrean ke urutan berikutnya.\n  th [jumlah] : Putar daftar lagu Top Hits terpopuler dan ganti antrean saat ini.\n  lk : Putar Lagu yang Disukai (khusus layanan Spotify).\n  src [judul trek] : Cari dan pilih trek dari hasil pencarian untuk diputar.\n  rp : Mulai ulang pemutaran dari awal untuk trek saat ini.\n  s : Hentikan pemutaran dan kosongkan antrean saat ini.\n  n : Memutar trek berikutnya.\n  b : Memutar trek sebelumnya.\n  sn [nilai] : Majukan durasi pemutaran saat ini ke nilai detik yang ditentukan.\n  sb [nilai] : Mundurkan durasi pemutaran saat ini ke nilai detik yang ditentukan.\n  cti : Tampilkan informasi trek saat ini.\n  q : Tampilkan antrean saat ini.\n  qc : Menghapus semua trek pada antrean sekaligus.\n  q rm <nomor index> : Hapus salah satu trek pada daftar antrean sesuai nomor index.\n  v [0-100] : Atur volume. Jika tidak ada nilai yang disertakan, tampilkan nilai volume saat ini.\n  m [st / rt / tl / rtl] : Mengatur mode pemutaran. Jika tidak ada mode yang ditentukan, mode yang aktif saat ini dan daftar mode akan ditampilkan.\n  sfl : Aktifkan / nonaktifkan pemutaran acak pada antrean.\n  ap : Aktifkan / nonaktifkan putar otomatis (rekomendasi otomatis trek sesuai saat ini).\n  dl : Unduh trek atau daftar putar saat ini ke saluran.\n  gl : Dapatkan URL trek saat ini.\n  lrc [judul trek / artis] : Tampilkan lirik trek. Jika tidak ada judul trek / artis yang disertakan, tampilkan lirik trek yang sedang diputar.\n  srl [1-20] : Atur batas hasil pencarian. Jika tidak ada nilai yang ditentukan, tampilkan batas pencarian saat ini.
+
+help_overview_spotify = 
+
+help_overview_rest = Layanan (aktif saat ini: {service}).\n  spt : Beralih ke Spotify.\n  ytv : Beralih ke YouTube Video.\n  ytm : Beralih ke YouTube Music.\n  st : Tampilkan waktu aktif dan statistik sesi.\n  cl [kode bahasa] : Atur bahasa bot (khusus untuk Anda saja, ini tidak akan berpengaruh ke pengguna lain). Jika tidak ada kode bahasa yang disertakan, tampilkan bahasa saat ini.
+
+help_overview_admin = Perintah Khusus untuk Admin:\n  sds : Ubah konfigurasi bot (seperti informasi server, informasi pengguna dan informasi saluran).\n  cci : Ubah informasi klien bot (seperti nama panggilan, status, jenis kelamin dan nama klien).\n  cdl [kode bahasa] : Atur bahasa bawaan bot. Jika tidak ada kode bahasa yang disertakan, tampilkan bahasa bawaan saat ini.\n  ua [+username / -username] : Kelola daftar admin bot.\n  gci [jalur saluran] : Dapatkan ID saluran saat ini atau dari jalur saluran yang ditentukan.\n  jc <jalur / id saluran|kata sandi> : Masuk ke saluran tertentu. Contoh: jc public|123.\n  hs : Sembunyikan / tampilkan status bot.\n  l : Kunci / buka kunci bot.\n  ucr : Aktifkan / nonaktifkan respon perintah tidak dikenal.\n  rs : Mulai ulang bot.\n  sd : Matikan bot.
+
+help_overview_footer = 
+
+greetings = Halo!\nSaya {client_name}, bot media streaming untuk TeamTalk. Saya dikembangkan menggunakan bahasa Rust dan siap membantu Anda melakukan streaming dari Spotify, YouTube, maupun tautan audio langsung ke saluran TeamTalk Anda.\nAnda dapat menggunakan saya dengan mengirimkan perintah melalui pesan pribadi maupun pesan saluran.\nCatatan: jika digunakan melalui pesan saluran, semua perintah harus diawali dengan tanda garis miring (/).\nBerikut beberapa perintah awal yang dapat Anda gunakan:\n- Ketik h untuk menampilkan daftar perintah lengkap dan panduan penggunaan.\n- Ketik dci untuk melihat informasi kontak pengembang.\n- Ketik log untuk menampilkan riwayat perubahan.\nJika Anda mengalami masalah atau ingin mengusulkan fitur baru untuk bot, jangan ragu untuk menghubungi pengembang melalui informasi kontak yang tersedia.\nTerima kasih telah menggunakan {client_name}. Semoga hari Anda menyenangkan!
+
+help_gs = gs\nTampilkan pesan sambutan dan panduan awal penggunaan bot.
+
+help_a = a\nTampilkan informasi bot.
+
+dev_contact_info = Pengembang terbuka terhadap setiap masukan dan kolaborasi.\nUntuk laporan bug, saran pengembangan, atau kerja sama, silakan hubungi pengembang melalui kontak di bawah ini.\nEmail : surel@fauzanaja.com\nWhatsApp : wa.me/fauzan_january\nTelegram : t.me/fauzan_january\n\nDapatkan info menarik mengenai proyek, karya dan lainnya dari pengembang melalui media di bawah ini.\nSaluran WhatsApp : whatsapp.com/channel/0029VaFLXIO545upgh6w5h3K\nSaluran Telegram : t.me/+30wgCgIaC9UzNTFl\nSitus Web : FauzanAja.com\n\nHargai karya pengembang dengan secangkir kopi.\nPaypal : donate@fauzanaja.com
+
+help_dci = dci\nTampilkan informasi kontak pengembang.
+
+help_log = log\nTampilkan riwayat perubahan.
+
+help_unknown = Perintah tidak dikenal. Ketik h untuk daftar perintah.
+
+help_play = p [pencarian/url]\n  Putar langsung trek dari pencarian atau URL (menimpa pemutaran saat ini).\n  Menerima nama trek, URL trek, playlist, album, atau tautan audio langsung.\n  Tanpa argumen: beralih putar atau jeda trek saat ini.\nContoh:\n  p photograph\n  p spotify:track:6rqhFgbbKwnb9MLmUQDhG6\n  p http://stream.zeno.fm/simplesample
+
+help_play_next = pn [pencarian/url]\n  Tambahkan trek ke antrean dari pencarian atau URL langsung tanpa menghentikan pemutaran saat ini.\n  Jika tidak ada yang sedang diputar, trek akan langsung diputar.\nContoh:\n  pn photograph\n  pn spotify:track:6rqhFgbbKwnb9MLmUQDhG6
+
+help_stop = s\nHentikan pemutaran dan kosongkan antrean.
+
+help_next = n\nLanjut ke trek berikutnya.\nJika autoplay aktif dan tidak ada trek tersisa, mengambil rekomendasi.
+
+help_prev = b\nKembali ke trek sebelumnya.\nJika trek sudah berjalan lebih dari 3 detik, trek akan dimulai ulang dari awal - tekan lagi untuk kembali lebih jauh. Gunakan rp untuk selalu memulai ulang.
+
+help_replay = rp\nMemulai ulang trek saat ini dari awal.
+
+help_current = cti\nTampilkan trek yang sedang diputar beserta posisi, durasi, dan mode yang aktif.
+
+help_queue = q\n  q              Tampilkan trek saat ini dan trek mendatang.\n  qc             Hapus semua trek mendatang (pertahankan trek saat ini).\n  q rm <N>       Hapus trek mendatang ke-N.\n                 N=1 adalah trek berikutnya setelah trek saat ini.\nTrek yang sudah diputar tidak akan ditampilkan.\nContoh:\n  q rm 1         Hapus trek mendatang berikutnya\n  q rm 3         Hapus trek mendatang ke-3\n  qc             Hapus semua trek setelah trek saat ini
+
+help_mode = m [st|rt|tl|rtl]\n  st   Single Track (putar sekali lalu berhenti)\n  rt   Repeat Track (ulangi trek saat ini)\n  tl   Track List (putar antrean sampai selesai)\n  rtl  Repeat Track List (ulangi seluruh antrean)\n  m    Tampilkan mode aktif dan daftar opsi\nPengacakan terpisah: lihat 'h sfl'.
+
+help_shuffle = sfl\nBeralih aktif/nonaktif pengacakan antrean mendatang (bekerja bersama mode pengulangan).
+
+help_volume = v [0-100]\n  v          Tampilkan volume saat ini\n  v 50       Atur volume ke 50%\n  v50        Atur volume ke 50% (tanpa spasi)\nVolume dibatasi oleh volume maksimum yang dikonfigurasi.
+
+help_seek = sn / sb [detik]\n  sn         Maju 10 detik (bawaan)\n  sb         Mundur 10 detik (bawaan)\n  sn30       Maju 30 detik\n  sb 5       Mundur 5 detik
+
+help_search = src <pencarian>\n  Cari dan tampilkan hasil. Kemudian:\n  <nomor>    Pilih hasil untuk dimasukkan ke antrean\n  c          Batalkan hasil pencarian\nContoh:\n  src photograph\n  2          Pilih hasil ke-2
+
+help_radio = ap\nBeralih aktif/nonaktif autoplay (rekomendasi trek serupa secara otomatis saat antrean habis).
+
+help_link = gl\nDapatkan URL web untuk trek yang sedang diputar (berguna untuk dibagikan).
+
+help_stats = st\nTampilkan waktu aktif bot, trek yang diputar sesi ini, panjang antrean, dan volume.
+
+help_gci = gci [jalur saluran]\nDapatkan ID nomor saluran saat ini atau dari jalur saluran yang ditentukan.\nContoh:\n  gci\n  gci /Ruang Musik\n  gci Public
+
+help_jc = jc <jalur/ID>[|sandi]\nMasuk saluran TeamTalk berdasarkan jalur atau nomor ID saluran (opsional: tambahkan '|' dan kata sandi jika saluran dikunci).\nContoh: jc 2 atau jc /Ruang Musik atau jc /VIP Lounge|rahasia123
+
+help_lang = cl [kode]\nTampilkan bahasa yang tersedia, atau atur bahasa khusus untuk Anda sendiri (hanya berlaku untuk akun Anda, bukan server).\nPilihan Anda diingat berdasarkan nama pengguna.\ncl clear menghapus pilihan Anda (mengikuti bawaan server).\nContoh: cl id
+
+help_glang = cdl [kode]\nAtur bahasa bawaan server (admin).\nPengguna yang memilih bahasa mereka sendiri dengan cl tetap menyimpannya.
+
+help_cci = cci\nUbah informasi klien bot (nama panggilan, status, jenis kelamin, nama klien) secara interaktif (admin).
+
+help_service = /spt / /ytv / /ytm\n  /spt    Beralih layanan aktif ke Spotify.\n  /ytv    Beralih layanan aktif ke YouTube Video.\n  /ytm    Beralih layanan aktif ke YouTube Music.\nPerintah seperti p, pn, src, n, b menargetkan layanan yang aktif.\nBeralih layanan tidak menghentikan pemutaran. Gunakan s untuk berhenti.
+
+help_restart = rs\nMulai ulang bot. Berguna untuk memuat ulang konfigurasi tanpa mematikan proses bot sepenuhnya.
+
+help_quit = sd\nMatikan bot. Menyimpan konfigurasi sebelum keluar.
+help_srl = srl [1-20]\n  srl       Tampilkan batas hasil pencarian saat ini\n  srl <N>   Atur batas hasil pencarian (1-20)\nMengatur berapa banyak hasil yang ditampilkan oleh perintah src.
+help_sds = sds\nLihat dan ubah konfigurasi Server, Port, Username, Password, dan Saluran bawaan.
+help_lock = l\nKunci atau buka kunci bot. Ketika dikunci, hanya admin yang dapat mengoperasikan bot.
+help_hs = hs\nBeralih antara menyembunyikan atau menampilkan status bot.
+bot_locked = Bot sedang dikunci.
+bot_locked_success = Bot dikunci.
+bot_unlocked_success = Bot tidak dikunci.
+status_hidden_success = Status bot berhasil disembunyikan.
+status_shown_success = Status bot berhasil ditampilkan.
+help_ucr = ucr\nBeralih antara mengaktifkan atau menonaktifkan balasan untuk perintah yang tidak dikenal atau tidak valid.
+ucr_enabled = Respon perintah tidak dikenal diaktifkan.
+ucr_disabled = Respon perintah tidak dikenal dinonaktifkan.
+help_dl = dl\nUnduh trek yang sedang diputar atau seluruh lagu dalam playlist ke saluran secara interaktif.
+help_lrc = lrc [judul trek / artis]\n  Tampilkan lirik untuk trek saat ini atau cari berdasarkan judul / artis.\n  Jika tidak ada judul yang disertakan, mengambil lirik untuk trek yang sedang diputar.\nContoh:\n  lrc\n  lrc Bohemian Rhapsody\n  lrc Nidji - Laskar Pelangi
+help_th = th [jumlah]\n  Putar daftar lagu Top Hits terpopuler saat ini dan ganti antrean yang ada.\n  Jumlah lagu dapat ditentukan (bawaan: 10, rentang: 1-50).\nContoh:\n  th\n  th 5\n  th 20
+help_liked = lk\nPutar seluruh koleksi Lagu yang Disukai (Liked Songs) dari akun Spotify yang sedang login pada bot (khusus layanan Spotify).
+dl_no_track = Tidak ada trek yang sedang diputar.
+dl_live_stream = Siaran langsung tidak dapat diunduh.
+dl_no_permission = Bot tidak memiliki izin untuk mengunggah file ke saluran.
+dl_menu_target = Pilih target unduhan:\n1. Hanya trek yang sedang diputar ({title})\n2. Seluruh lagu dalam playlist/antrean ({count} trek)\n3. Batal\nKetik angka pilihan Anda (1-3):
+dl_menu_format = Pilih format audio:\n1. .mp3 (Kompatibel universal)\n2. .m4a (Kualitas tinggi)\n3. .wav (PCM tanpa kompresi)\n4. .ogg (Format asli Spotify)\n5. Batal\nKetik angka pilihan Anda (1-5):
+dl_downloading = Mengunduh '{title}'...
+dl_uploading = Mengunggah '{title}' ke saluran...
+dl_success = '{title}' berhasil diunggah ke saluran.
+dl_quota_exceeded = Gagal mengunggah '{title}': Kuota disk saluran penuh.
+dl_failed = Gagal mengunduh atau mengunggah trek: {error}
+dl_timeout = Waktu sesi unduh habis.
+dl_cancelled = Sesi unduh dibatalkan.
+dl_invalid_choice = Pilihan tidak valid. Silakan ketik angka yang sesuai.
+dl_already_active = Sesi pengunduhan sedang berlangsung oleh pengguna lain.
+
+# Top Hits
+loading_top_hits = Memuat {count} lagu Top Hits dari {service}...
+top_hits_not_supported = Top Hits tidak didukung pada layanan siaran langsung.
+
+# Lirik
+lyrics_loading = Mencari lirik...
+lyrics_not_found = Lirik tidak ditemukan untuk: {query}
+lyrics_instrumental = Trek ini adalah instrumental (tanpa lirik).
+lyrics_no_track = Tidak ada trek yang sedang diputar. Gunakan: lrc [judul trek / artis]
+lyrics_header = Lirik: {track}
+
+# ID Saluran (gci)
+channel_id_current = ID saluran saat ini: {id}
+channel_id_path = ID saluran '{path}': {id}
+not_in_channel = Bot belum berada di saluran.
+
+# User Admin (ua)
+help_ua = ua [+username / -username]\n  Kelola daftar admin bot.\n  +username menambahkan admin, -username menghapus admin.\n  Tanpa opsi, menampilkan daftar admin.\nContoh:\n  ua +budi\n  ua -andi\n  ua
+admin_added = Pengguna '{username}' berhasil ditambahkan sebagai admin.
+admin_removed = Pengguna '{username}' telah dihapus dari daftar admin.
+admin_not_found = Pengguna '{username}' tidak ditemukan dalam daftar admin.
+admin_already_exists = Pengguna '{username}' sudah terdaftar sebagai admin.
+admin_list_empty = Daftar admin kosong.
+admin_list = Daftar admin: {admins}
+

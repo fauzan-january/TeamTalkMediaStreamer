@@ -1,0 +1,405 @@
+# TeamTalkMediaStreamer translation file
+# Translate the text after each "=". You can move {words in braces} anywhere in
+# your sentence, but don't rename them or invent new ones. Delete a line to leave
+# that message in English. Lines starting with # are notes and are ignored.
+# Save your translation as <code>.lang (for example de.lang) in the lang folder
+# next to your config, then pick it in the bot with: cl <code>
+
+# The name of this language, in this language. Shown when someone selects it.
+language_name = English
+
+# Language
+
+# Confirmation after the cl command succeeds. {language} = the language just picked.
+lang_set = Language set to {language}
+
+# Playback
+
+# Shown while the bot looks up what the user asked to play.
+searching = Searching...
+
+# Shown when play/pause is pressed while a track is still loading.
+loading_track = Loading track...
+
+# Shown when there is nothing to play or resume.
+nothing_to_play = Nothing to play. Use: p <query>
+play_next_usage = Nothing to queue. Use: pn <query>
+
+# Shown when the current track restarts from the beginning.
+restarting_track = Restarting track
+
+# Shown while the user's Spotify Liked Songs are being loaded.
+loading_liked = Loading liked songs...
+
+# Shown when there is no current track (current / link commands).
+nothing_playing = Nothing playing
+
+# The now-playing status line. {track} = title, {index}/{total} = queue position,
+# {position}/{duration} = time, {modes} = active playback modes.
+current_track = {track} [{index}/{total}] ({position}/{duration})\n{modes}
+
+# Shown when an in-progress search is cancelled.
+search_cancelled = Search cancelled
+
+# Volume and seek
+
+# Shown when the volume is changed. {percent} = new volume, 0-100.
+volume_set = Volume: {percent}%
+
+# Shown when the user asks for the current volume. {percent} = current, {max} = allowed maximum.
+volume_show = Volume: {percent}% (max: {max})
+
+# Shown when a requested volume is above the allowed maximum. {max} = maximum, {got} = what they asked for.
+volume_range = Volume must be 0-{max}. Got: {got}
+
+# Shown when seeking forwards. {seconds} = how far.
+seek_forward = Seeking forward {seconds}s
+
+# Shown when seeking backwards. {seconds} = how far.
+seek_backward = Seeking backward {seconds}s
+
+# Shown when the seek command is used incorrectly.
+seek_usage = Usage: sn [seconds] / sb [seconds]
+
+# Queue
+
+# Shown when the queue is cleared.
+queue_cleared = Queue cleared
+
+# Shown when queue rm is given position 0 (positions start at 1).
+index_starts_at_one = Index starts at 1
+
+# Shown when queue rm points past the end of the queue. {position} = the number given.
+no_track_at_position = No track at position {position}
+
+# Shown when a track is removed from the queue. {name} = the track title.
+removed = Removed: {name}
+
+# Shown when queue rm is used incorrectly.
+queue_rm_usage = Usage: q rm <number>
+
+# Modes
+
+# Shown when single-track mode turns on.
+mode_single_track = Single Track mode enabled
+
+# Shown when repeat-track mode turns on.
+mode_repeat_track = Repeat Track mode enabled
+
+# Shown when track-list mode turns on.
+mode_track_list = Track List mode enabled
+
+# Shown when repeat-track-list mode turns on.
+mode_repeat_track_list = Repeat Track List mode enabled
+
+# Shown when shuffle mode turns on.
+mode_shuffle = Shuffle enabled
+
+# Shown when shuffle is turned off.
+shuffle_off = Shuffle disabled
+
+# Shown when the shuffle command is used.
+shuffle_usage = Usage: sfl
+
+# Shown when the previous-track command has no earlier track to return to.
+nothing_behind = Nothing to go back to.
+
+# Shown when the mode command is used without a valid option. {current_mode} = current active mode.
+mode_usage = Current mode: {current_mode}\nst   Single Track\nrt   Repeat Track\ntl   Track List\nrtl  Repeat Track List
+
+# Search and pick
+
+# Shown when search is used without a query and no results are waiting.
+search_usage = Usage: src <query>
+
+# First line above the numbered search results.
+search_results_header = Search results:
+
+# Last line under the numbered search results.
+search_results_footer = Type a number to play, or c to cancel
+
+# Shown when pick is used incorrectly.
+pick_usage = Usage: pick <number>
+
+# Shown when pick is given 0 or less.
+pick_too_low = Pick number must be 1 or higher
+
+# Shown when search results limit is set. {limit} = new limit.
+search_limit_set = Search results limit: {limit}
+
+# Shown when search results limit is queried. {limit} = current limit.
+search_limit_show = Search results limit: {limit} (range: 1-20)
+
+# Shown when search results limit is out of range. {got} = what was given.
+search_limit_range = Search results limit must be 1-20. Got: {got}
+
+# Autoplay
+ 
+# Shown when autoplay is turned on but was already on.
+radio_already_on = Autoplay is already on
+ 
+# Shown when autoplay turns on.
+radio_enabled = Autoplay enabled
+ 
+# Shown when autoplay is turned off but was already off.
+radio_already_off = Autoplay is already off
+ 
+# Shown when autoplay turns off.
+radio_disabled = Autoplay disabled
+ 
+# Shown when the user asks for autoplay status and it is on.
+radio_status_on = Autoplay: ON
+ 
+# Shown when the user asks for autoplay status and it is off.
+radio_status_off = Autoplay: OFF
+
+# Service switching
+
+# Shown when switching to the service that is already active. {service} = Spotify or YouTube.
+already_on_service = Already on {service}
+
+# Shown when the active service changes. {service} = Spotify or YouTube.
+switched_service = Switched to {service}
+
+# Shown when switching to a service this bot's config has disabled. {service} = Spotify or YouTube.
+service_not_enabled = {service} is not enabled on this bot
+
+# Bot management
+
+# Client info (cci)
+cci_already_active = A client information session is already in progress.
+cci_menu = Current Bot Client Info:\n• Nickname: {nick}\n• Status: {status}\n• Gender: {gender}\n• Client Name: {client_name}\n\nSelect an option:\n1. Change nickname\n2. Change status\n3. Change gender\n4. Change client name\n5. Cancel\nType your choice (1-5):
+cci_prompt_nick = Enter new bot nickname (or type 'c' to cancel):
+cci_nick_success = Bot nickname successfully changed to: {nick}
+cci_prompt_status = Enter new bot status (type 'default' to restore default status, or 'c' to cancel):
+cci_status_success = Bot status successfully updated to: {status}
+cci_status_default_success = Bot status restored to default: {status}
+cci_menu_gender = Select bot gender:\n1. Male (m)\n2. Female (f)\n3. Neutral (n)\n4. Cancel\nEnter your choice (1-4):
+cci_gender_success = Bot gender successfully updated to: {gender}
+cci_prompt_client_name = Enter new bot client name (type 'default' to restore default client name, or 'c' to cancel):
+cci_client_name_success = Bot client name successfully updated to: {client_name}\nNote: New client name will take full effect when the bot reconnects / restarts.
+cci_client_name_default_success = Bot client name restored to default: {client_name}\nNote: New client name will take full effect when the bot reconnects / restarts.
+cci_cancelled = Client information update cancelled.
+cci_timeout = Timed out waiting for input. Client information update cancelled.
+cci_invalid_choice = Invalid choice. Please enter a valid option number.
+
+# Shows the bot's version and information.
+about = TeamTalk Media Streamer (Rust) v{version}\nMedia streaming bot for TeamTalk. Supports Spotify, YouTube, and Direct Audio Link playback.\nModified by Fauzan, S.Kom. | PT Kemenangan Digital Indonesia\nhttps://github.com/fauzan-january/TeamTalkMediaStreamer/\nOriginal developer:\nhttps://github.com/LuciferM242/ttspotify-rs
+
+# The stats command. {uptime} = time running, {tracks} = tracks played,
+# {queue} = queue length, {volume} = current volume.
+stats = Uptime: {uptime}\nTracks played: {tracks}\nQueue: {queue} tracks\nVolume: {volume}%
+
+# The idle status message displayed in TeamTalk when the bot is not playing.
+status_idle = Type "gs" to get started
+
+# Direct link
+
+# Shown when connecting to a direct stream URL.
+direct_link_connecting = Connecting to direct link...
+
+# Shown when a direct stream track starts playing. {name} = stream or track title.
+direct_link_playing = Playing direct link: {name}
+
+# Shown when a direct stream is added to queue. {name} = stream or track title.
+direct_link_enqueued = Added direct link to queue: {name}
+
+# Shown when direct stream playback fails. {error} = error reason.
+direct_link_failed = Failed to play direct link: {error}
+
+# Player messages
+
+# Shown when Spotify could not be reached. {error} = a short error description.
+spotify_unavailable = Spotify unavailable: {error}
+
+# Shown when a search or play request found nothing.
+no_results = No results found
+
+# Shown when a track starts. {track} = the track title.
+now_playing = Now playing: {track}
+
+# Shown when a track starts and more were queued behind it. {track} = title,
+# {count} = how many more were queued, {more} = empty or the "more loading" note below.
+now_playing_queued = Now playing: {track} (+{count} queued{more})
+
+# A short note appended while the rest of a big playlist is still loading.
+# Keep the leading comma (or your language's equivalent separator).
+more_loading = , more loading
+
+# Shown when several tracks were added behind the current one. {count} = how many,
+# {upcoming} = queue position note, {more} = empty or the "more loading" note.
+queued_many = Queued {count} tracks{upcoming}{more}
+
+# Shown when one track was added behind the current one. {track} = title,
+# {upcoming} = queue position note, {more} = empty or the "more loading" note.
+queued_one = Queued: {track}{upcoming}{more}
+
+# Shown when everything asked for was already in the queue and more is loading.
+already_queued_loading_rest = Already queued, loading the rest
+
+# Shown when everything asked for was already in the queue.
+already_in_queue = Already in queue
+
+# Shown when a search could not be completed. {error} = a short error description.
+search_failed = Search failed: {error}
+
+# Shown while autoplay looks for recommendations.
+radio_fetching = Autoplay: fetching recommendations...
+
+# Shown when autoplay starts a recommended track. {track} = the track title.
+radio_playing = Autoplay: {track}
+
+# Shown when autoplay found no recommendations.
+radio_no_recs = Autoplay: no recommendations found
+
+# Shown when autoplay could not fetch recommendations. {error} = a short error description.
+radio_failed = Autoplay failed: {error}
+
+# Shown when the queue finishes and nothing else plays.
+end_of_queue = End of queue
+
+# Shown when a picked search-result number does not exist.
+invalid_pick = Invalid pick or no search results
+
+# Shown when the jc command names a channel that does not exist. {path} = the channel path.
+channel_not_found = Channel not found: {path}
+
+# Shown when a track could not be started. {track} = the track title.
+failed_to_start = Failed to start track: {track}
+
+# Help text
+#
+# One entry per help topic. Long lines: \n marks a line break in the
+# message the user sees. Command names and their arguments stay in English,
+# because they are what the user has to type.
+
+# The main help listing: playback, queue and mode sections.
+help_overview_playback = Bot Usage Help:\n  gs : Show greeting message and quick start guide.\n  a : Show bot information.\n  dci : Show developer contact information.\n  log : Show changelog.\n  h [command] : Show detailed help for a command (Example: h q). If no other command is provided, show the list of available commands.\n  p [track title / url] : Play track / URL. If no track title / url is provided, play/pause current track.\n  pn [track title / url] : Add track / URL to queue to play next. Repeating the same command will append to the queue in sequence.\n  th [count] : Play today's Top Hits and replace current queue.\n  lk : Play Liked Songs (Spotify service only).\n  src [track title] : Search and pick a track from search results to play.\n  rp : Restart playback from the beginning for current track.\n  s : Stop playback and clear the current queue.\n  n : Play next track.\n  b : Play previous track.\n  sn [value] : Seek playback forward by the specified number of seconds.\n  sb [value] : Seek playback backward by the specified number of seconds.\n  cti : Show current track information.\n  q : Show current queue.\n  qc : Remove all tracks from the queue at once.\n  q rm <index number> : Remove a track from the queue by its index number.\n  v [0-100] : Set volume. If no value is provided, show current volume.\n  m [st / rt / tl / rtl] : Set playback mode. If no mode is specified, show active mode and list of modes.\n  sfl : Enable / disable queue shuffle.\n  ap : Enable / disable autoplay (automatic recommendations matching current track).\n  dl : Download current track or playlist to the channel.\n  gl : Get URL for current track.\n  lrc [track title / artist] : Show track lyrics. If no track title / artist is provided, show lyrics for the currently playing track.\n  srl [1-20] : Set search results limit. If no value is specified, show current search limit.
+
+help_overview_spotify = 
+
+help_overview_rest = Services (currently active: {service}).\n  spt : Switch to Spotify.\n  ytv : Switch to YouTube Video.\n  ytm : Switch to YouTube Music.\n  st : Show uptime and session stats.\n  cl [language code] : Set bot language (for you only, this will not affect other users). If no language code is provided, show current language.
+
+help_overview_admin = Admin-Only Commands:\n  sds : Modify bot configuration (such as server info, user credentials, and channel info).\n  cci : Change bot client info (such as nickname, status, gender, and client name).\n  cdl [language code] : Set server default language. If no language code is provided, show current default language.\n  ua [+username / -username] : Manage bot administrator list.\n  gci [channel path] : Get current channel ID or channel ID from path.\n  jc <path / channel id|password> : Join a specific channel. Example: jc public|123.\n  hs : Hide / show bot status.\n  l : Lock / unlock bot.\n  ucr : Toggle unknown command response on / off.\n  rs : Restart bot.\n  sd : Shut down bot.
+
+help_overview_footer = 
+
+greetings = Hello!\nI am {client_name}, a media streaming bot for TeamTalk. I was developed using Rust and am ready to help you stream from Spotify, YouTube, and direct audio links to your TeamTalk channel.\nYou can use me by sending commands via private message or channel message.\nNote: if used via channel messages, all commands must start with a forward slash (/).\nHere are some initial commands you can use:\n- Type h to show the complete command list and usage guide.\n- Type dci to view developer contact information.\n- Type log to show the changelog.\nIf you encounter any issues or want to suggest new features for the bot, feel free to reach out to the developer via the provided contact information.\nThank you for using {client_name}. Have a great day!
+
+help_gs = gs\nShow greeting message and quick start guide.
+
+help_a = a\nShow bot information.
+
+dev_contact_info = The developer is open to any feedback and collaboration.\nFor bug reports, feature suggestions, or inquiries, feel free to reach out to the developer via the contacts below.\nEmail : surel@fauzanaja.com\nWhatsApp : wa.me/fauzan_january\nTelegram : t.me/fauzan_january\n\nGet exciting updates about projects, creations, and more from the developer via the channels below.\nWhatsApp Channel : whatsapp.com/channel/0029VaFLXIO545upgh6w5h3K\nTelegram Channel : t.me/+30wgCgIaC9UzNTFl\nWebsite : FauzanAja.com\n\nSupport the developer's work with a cup of coffee.\nPaypal : donate@fauzanaja.com
+
+help_dci = dci\nShow developer contact information.
+
+help_log = log\nShow changelog.
+
+# Shown for an unrecognised command or help topic.
+help_unknown = Unknown command. Type h for the command list.
+
+help_play = p [query/url]\n  Play track from search query or URL immediately (replaces currently playing track).\n  Accepts track names, track URLs, playlist URLs, album URLs, and direct audio streams.\n  Without query: toggles play/pause on the current track.\nExamples:\n  p photograph\n  p spotify:track:6rqhFgbbKwnb9MLmUQDhG6\n  p http://stream.zeno.fm/simplesample
+
+help_play_next = pn [query/url]\n  Add tracks from search query or direct URL to the queue without interrupting current playback.\n  If nothing is playing, starts playback immediately.\nExamples:\n  pn photograph\n  pn spotify:track:6rqhFgbbKwnb9MLmUQDhG6
+
+help_stop = s\nStop playback and clear the queue.
+
+help_next = n\nSkip to the next track.\nIf autoplay is on and nothing is left, fetches recommendations.
+
+help_prev = b\nGo back to the previous track.\nMore than 3 seconds into a track, it restarts that track instead - press it again to go further back. Use rp to always restart.
+
+help_replay = rp\nRestart the current track from the beginning.
+
+help_current = cti\nShow the currently playing track with position, duration, and active modes.
+
+help_queue = q\n  q              Show the current track and what is coming.\n  qc             Remove all upcoming tracks (keeps current).\n  q rm <N>       Remove the Nth upcoming track.\n                 N=1 is the next track after the current one.\nAlready played tracks are not listed.\nExamples:\n  q rm 1         Remove the next upcoming track\n  q rm 3         Remove the 3rd upcoming track\n  qc             Clear everything after the current track
+
+help_mode = m [st|rt|tl|rtl]\n  st   Single Track (play once then stop)\n  rt   Repeat Track (loop current track)\n  tl   Track List (play queue in order)\n  rtl  Repeat Track List (loop entire queue)\n  m    Show active mode and options\nShuffle is separate: see 'h sfl'.
+
+help_shuffle = sfl\nToggle shuffle on or off for upcoming tracks (works together with repeat).
+
+help_volume = v [0-100]\n  v          Show current volume\n  v 50       Set volume to 50%\n  v50        Set volume to 50% (no space)\nVolume is capped by the configured max volume.
+
+help_seek = sn / sb [seconds]\n  sn         Seek forward 10 seconds (default)\n  sb         Seek backward 10 seconds (default)\n  sn30       Seek forward 30 seconds\n  sb 5       Seek backward 5 seconds
+
+help_search = src <query>\n  Search and show results. Then:\n  <number>   Pick a result to add to queue\n  c          Dismiss search results\nExample:\n  src photograph\n  2          Pick the 2nd result
+
+help_radio = ap\nToggle autoplay mode on or off (automatically fetches recommendations when queue ends).
+
+help_link = gl\nGet the URL for the currently playing track.\nOpen it in the service's app or share it with others.
+
+help_stats = st\nShow bot uptime, tracks played this session, queue length, and volume.
+
+help_gci = gci [channel path]\nGet the numeric ID of the current channel or resolve a channel path to its ID.\nExamples:\n  gci\n  gci /Music Room\n  gci Public
+
+help_jc = jc <path/ID>[|password]\nJoin a TeamTalk channel by path or numeric channel ID (optional: append '|' and password if channel is locked).\nExample: jc 2 or jc /Music Room or jc /VIP Lounge|secret123
+
+help_lang = cl [code]\nShow available languages, or set language for yourself (affects only you, not the server).\nYour choice is remembered by username.\ncl clear removes your choice (follow the server default).\nExample: cl de
+
+help_glang = cdl [code]\nSet the server default language (admin).\nUsers who picked their own language with cl keep it.
+
+help_cci = cci\nChange bot client information (nickname, status, gender, client name) interactively (admin).
+
+help_service = /spt / /ytv / /ytm\n  /spt    Switch active service to Spotify.\n  /ytv    Switch active service to YouTube Video.\n  /ytm    Switch active service to YouTube Music.\nCommands like p, pn, src, n, b target the active service.\nSwitching does not interrupt playback. Use s to stop.
+
+help_restart = rs\nRestart the bot. Saves config before exit.
+
+help_quit = sd\nShut down the bot. Saves config before exit.
+
+help_srl = srl [1-20]\n  srl       Show current search results limit\n  srl <N>   Set search results limit (1-20)\nControls how many results are returned by the src command.
+help_sds = sds\nRead and modify default Server, Port, Username, Password, and Channel configurations.
+help_lock = l\nLocks or unlocks the bot. When locked, only admins can operate the bot.
+help_hs = hs\nToggle between hiding and showing the bot status.
+bot_locked = Bot is locked.
+bot_locked_success = Bot is locked.
+bot_unlocked_success = Bot is unlocked.
+status_hidden_success = Bot status hidden.
+status_shown_success = Bot status shown.
+help_ucr = ucr\nToggle replying to unknown, invalid, or unauthorized commands.
+ucr_enabled = Unknown command response enabled.
+ucr_disabled = Unknown command response disabled.
+help_dl = dl\nInteractively download the current track or the entire playlist to the channel.
+help_lrc = lrc [track title / artist]\n  Show lyrics for the currently playing track or search by title / artist.\n  If no title is provided, fetches lyrics for the currently playing track.\nExample:\n  lrc\n  lrc Bohemian Rhapsody\n  lrc Queen - Bohemian Rhapsody
+help_th = th [count]\n  Play today's Top Hits and replace the existing queue.\n  Number of tracks can be specified (default: 10, range: 1-50).\nExamples:\n  th\n  th 5\n  th 20
+help_liked = lk\nPlay all tracks from your Liked Songs collection on the active Spotify account (Spotify service only).
+dl_no_track = Nothing is currently playing.
+dl_live_stream = Live streams cannot be downloaded.
+dl_no_permission = The bot does not have permission to upload files to this channel.
+dl_menu_target = Select download target:\n1. Only current track ({title})\n2. All tracks in playlist/queue ({count} tracks)\n3. Cancel\nType your choice number (1-3):
+dl_menu_format = Select audio format:\n1. .mp3 (Universal compatibility)\n2. .m4a (High quality)\n3. .wav (Uncompressed PCM)\n4. .ogg (Original Spotify format)\n5. Cancel\nType your choice number (1-5):
+dl_downloading = Downloading '{title}'...
+dl_uploading = Uploading '{title}' to the channel...
+dl_success = '{title}' successfully uploaded to the channel.
+dl_quota_exceeded = Upload failed for '{title}': Channel disk quota exceeded.
+dl_failed = Failed to download or upload track: {error}
+dl_timeout = Download session timed out.
+dl_cancelled = Download session cancelled.
+dl_invalid_choice = Invalid choice. Please type a valid number.
+dl_already_active = A download session is already in progress by another user.
+
+# Top Hits
+loading_top_hits = Loading {count} Top Hits tracks from {service}...
+top_hits_not_supported = Top Hits is not supported on direct stream service.
+
+# Lyrics
+lyrics_loading = Searching for lyrics...
+lyrics_not_found = Lyrics not found for: {query}
+lyrics_instrumental = This track is instrumental (no lyrics).
+lyrics_no_track = No track is currently playing. Use: lrc [track title / artist]
+lyrics_header = Lyrics: {track}
+
+# Channel ID (gci)
+channel_id_current = Current channel ID: {id}
+channel_id_path = Channel ID for '{path}': {id}
+not_in_channel = The bot is not currently in a channel.
+
+# User Admin (ua)
+help_ua = ua [+username / -username]\n  Manage bot administrators.\n  +username adds an admin, -username removes an admin.\n  Without an option, shows the admin list.\nExamples:\n  ua +alice\n  ua -bob\n  ua
+admin_added = User '{username}' is now an admin.
+admin_removed = User '{username}' is no longer an admin.
+admin_not_found = User '{username}' is not in the admin list.
+admin_already_exists = User '{username}' is already an admin.
+admin_list_empty = Admin list is empty.
+admin_list = Admin list: {admins}
+

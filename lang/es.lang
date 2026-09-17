@@ -1,0 +1,268 @@
+# TeamTalkMediaStreamer - Spanish translation (complete)
+# Traduccion espanola completa. Mantenga las {palabras entre llaves} tal cual;
+# puede moverlas a cualquier posicion de la frase.
+
+language_name = Español
+
+# Idioma
+
+lang_set = Idioma establecido en {language}
+
+# Reproducción
+
+searching = Buscando...
+loading_track = Cargando pista...
+nothing_to_play = Nada que reproducir. Usa: p <búsqueda>
+play_next_usage = Nada para añadir a la cola. Usa: pn <búsqueda>
+restarting_track = Reiniciando la pista
+loading_liked = Cargando tus canciones favoritas...
+nothing_playing = Nada en reproducción
+current_track = {track} [{index}/{total}] ({position}/{duration})\n{modes}
+search_cancelled = Búsqueda cancelada
+
+# Volumen y posición
+
+volume_set = Volumen: {percent}%
+volume_show = Volumen: {percent}% (máx: {max})
+volume_range = El volumen debe ser 0-{max}. Recibido: {got}
+seek_forward = Avanzando {seconds}s
+seek_backward = Retrocediendo {seconds}s
+seek_usage = Uso: sn [segundos] / sb [segundos]
+
+# Cola
+
+queue_cleared = Cola vaciada
+index_starts_at_one = La posición empieza en 1
+no_track_at_position = No hay pista en la posición {position}
+removed = Eliminado: {name}
+queue_rm_usage = Uso: q rm <número>
+
+# Modos
+
+mode_single_track = Modo Single Track activado
+mode_repeat_track = Modo Repeat Track activado
+mode_track_list = Modo Track List activado
+mode_repeat_track_list = Modo Repeat Track List activado
+mode_shuffle = Modo aleatorio activado
+
+# Shown when shuffle is turned off.
+shuffle_off = Reproduccion aleatoria desactivada
+
+# Shown when the shuffle command is given something other than on/off.
+shuffle_usage = Uso: sfl
+
+# Shown when the previous-track command has no earlier track to return to.
+nothing_behind = No hay nada anterior.
+mode_usage = Modo actual: {current_mode}\nst   Single Track\nrt   Repeat Track\ntl   Track List\nrtl  Repeat Track List
+
+# Búsqueda y selección
+
+search_usage = Uso: src <búsqueda>
+search_results_header = Resultados de la búsqueda:
+search_results_footer = Escribe un número para reproducir, o c para cancelar
+pick_usage = Uso: pick <número>
+pick_too_low = El número debe ser 1 o mayor
+search_limit_set = Límite de resultados de búsqueda: {limit}
+search_limit_show = Límite de resultados de búsqueda: {limit} (rango: 1-20)
+search_limit_range = El límite de resultados debe ser de 1 a 20. Recibido: {got}
+
+# Autoplay
+
+radio_already_on = El autoplay ya está encendido
+radio_enabled = Autoplay encendido
+radio_already_off = El autoplay ya está apagado
+radio_disabled = Autoplay apagado
+radio_status_on = Autoplay: ENCENDIDO
+radio_status_off = Autoplay: APAGADO
+
+# Servicio
+
+already_on_service = Ya estás en {service}
+switched_service = Cambiado a {service}
+service_not_enabled = {service} no está habilitado en este bot
+
+# Información del cliente (cci)
+cci_already_active = Ya hay una sesión de información del cliente en curso.
+cci_menu = Información actual del cliente bot:\n• Apodo: {nick}\n• Estado: {status}\n• Género: {gender}\n• Nombre del Cliente: {client_name}\n\nSelecciona una opción:\n1. Cambiar apodo\n2. Cambiar estado\n3. Cambiar género\n4. Cambiar nombre del cliente\n5. Cancelar\nEscribe tu elección (1-5):
+cci_prompt_nick = Introduce el nuevo apodo del bot (o escribe 'c' para cancelar):
+cci_nick_success = Apodo del bot cambiado con éxito a: {nick}
+cci_prompt_status = Introduce el nuevo estado del bot (escribe 'default' para restaurar el estado predeterminado, o 'c' para cancelar):
+cci_status_success = Estado del bot cambiado con éxito a: {status}
+cci_status_default_success = Estado del bot restablecido al predeterminado: {status}
+cci_menu_gender = Selecciona el género del bot:\n1. Masculino (m)\n2. Femenino (f)\n3. Neutral (n)\n4. Cancelar\nEscribe tu elección (1-4):
+cci_gender_success = Género del bot cambiado con éxito a: {gender}
+cci_prompt_client_name = Introduce el nuevo nombre de cliente del bot (escribe 'default' para restaurar el nombre predeterminado, o 'c' para cancelar):
+cci_client_name_success = Nombre de cliente del bot cambiado con éxito a: {client_name}\nNota: El nuevo nombre de cliente se aplicará al reconectar / reiniciar el bot.
+cci_client_name_default_success = Nombre de cliente del bot restablecido al predeterminado: {client_name}\nNota: El nuevo nombre de cliente se aplicará al reconectar / reiniciar el bot.
+cci_cancelled = Actualización de información del cliente cancelada.
+cci_timeout = Tiempo de espera agotado. Actualización de información cancelada.
+cci_invalid_choice = Elección no válida. Por favor, escribe un número de opción válido.
+
+about = TeamTalk Media Streamer (Rust) v{version}\nBot de streaming de medios para TeamTalk. Admite reproducción de Spotify, YouTube y enlaces de audio directos.\nModificado por Fauzan, S.Kom. | PT Kemenangan Digital Indonesia\nhttps://github.com/fauzan-january/TeamTalkMediaStreamer/\nDesarrollador original:\nhttps://github.com/LuciferM242/ttspotify-rs
+stats = Tiempo activo: {uptime}\nPistas reproducidas: {tracks}\nCola: {queue} pistas\nVolumen: {volume}%
+status_idle = Escribe "gs" para comenzar
+
+# Enlace directo
+
+direct_link_connecting = Conectando al enlace directo...
+direct_link_playing = Reproduciendo enlace directo: {name}
+direct_link_enqueued = Enlace directo añadido a la cola: {name}
+direct_link_failed = Error al reproducir el enlace directo: {error}
+
+# Mensajes del reproductor
+
+spotify_unavailable = Spotify no disponible: {error}
+no_results = No se encontraron resultados
+now_playing = Reproduciendo: {track}
+now_playing_queued = Reproduciendo: {track} (+{count} en cola{more})
+more_loading = , cargando más
+queued_many = {count} pistas añadidas a la cola{upcoming}{more}
+queued_one = En cola: {track}{upcoming}{more}
+already_queued_loading_rest = Ya en cola, cargando el resto
+already_in_queue = Ya está en la cola
+search_failed = La búsqueda falló: {error}
+radio_fetching = Autoplay: buscando recomendaciones...
+radio_playing = Autoplay: {track}
+radio_no_recs = Autoplay: no se encontraron recomendaciones
+radio_failed = El autoplay falló: {error}
+end_of_queue = Fin de la cola
+invalid_pick = Selección inválida o sin resultados de búsqueda
+channel_not_found = Canal no encontrado: {path}
+failed_to_start = Error al iniciar la pista: {track}
+
+# Help text
+#
+# One entry per help topic. Long lines: \n marks a line break in the
+# message the user sees. Command names and their arguments stay in English,
+# because they are what the user has to type.
+
+# The main help listing: playback, queue and mode sections.
+help_overview_playback = Ayuda de Uso del Bot:\n  gs : Mostrar mensaje de bienvenida y guía de inicio rápido.\n  a : Mostrar información del bot.\n  dci : Mostrar información de contacto del desarrollador.\n  log : Mostrar registro de cambios.\n  h [comando] : Mostrar ayuda detallada de un comando (Ejemplo: h q). Si no se especifica un comando, mostrar la lista de comandos disponibles.\n  p [título de pista / url] : Reproducir pista / URL. Si no se especifica título / url, reproducir/pausar pista actual.\n  pn [título de pista / url] : Añadir pista / URL a la cola para reproducir a continuación. Repetir el comando añadirá a la cola en orden.\n  th [cantidad] : Reproducir los Top Hits más populares y reemplazar la cola actual.\n  lk : Reproducir canciones que te gustan (solo servicio Spotify).\n  src [título de pista] : Buscar y elegir una pista de los resultados para reproducir.\n  rp : Reiniciar la pista actual desde el principio.\n  s : Detener la reproducción y vaciar la cola actual.\n  n : Reproducir pista siguiente.\n  b : Reproducir pista anterior.\n  sn [valor] : Avanzar la reproducción los segundos especificados.\n  sb [valor] : Retroceder la reproducción los segundos especificados.\n  cti : Mostrar información de la pista actual.\n  q : Mostrar la cola actual.\n  qc : Quitar todas las pistas de la cola a la vez.\n  q rm <número de índice> : Quitar una pista de la cola según su número de índice.\n  v [0-100] : Ajustar volumen. Si no se especifica valor, mostrar volumen actual.\n  m [st / rt / tl / rtl] : Ajustar modo de reproducción. Si no se especifica modo, mostrar modo activo y lista de modos.\n  sfl : Activar / desactivar reproducción aleatoria de la cola.\n  ap : Activar / desactivar autoplay (recomendaciones automáticas según pista actual).\n  dl : Descargar pista o lista de reproducción actual al canal.\n  gl : Obtener URL de la pista actual.\n  lrc [título de pista / artista] : Mostrar letra de la pista. Si no se incluye ningún título / artista, mostrar la letra de la pista actual.\n  srl [1-20] : Ajustar límite de resultados de búsqueda. Si no se especifica valor, mostrar límite actual.
+
+help_overview_spotify = 
+
+help_overview_rest = Servicios (activo actualmente: {service}).\n  spt : Cambiar a Spotify.\n  ytv : Cambiar a YouTube Video.\n  ytm : Cambiar a YouTube Music.\n  st : Mostrar tiempo activo y estadísticas de la sesión.\n  cl [código de idioma] : Ajustar idioma del bot (solo para ti, no afectará a otros usuarios). Si no se especifica código, mostrar idioma actual.
+
+help_overview_admin = Comandos Exclusivos para Administradores:\n  sds : Modificar configuración del bot (como datos del servidor, usuario y canal).\n  cci : Cambiar información de cliente del bot (apodo, estado, género y nombre del cliente).\n  cdl [código de idioma] : Ajustar idioma predeterminado del bot. Si no se especifica código, mostrar idioma predeterminado actual.\n  ua [+nombre_de_usuario / -nombre_de_usuario] : Administrar lista de administradores del bot.\n  gci [ruta de canal] : Obtener ID del canal actual o de la ruta especificada.\n  jc <ruta / id de canal|clave> : Entrar a un canal específico. Ejemplo: jc public|123.\n  hs : Ocultar / mostrar estado del bot.\n  l : Bloquear / desbloquear bot.\n  ucr : Activar / desactivar respuesta a comandos desconocidos.\n  rs : Reiniciar bot.\n  sd : Apagar bot.
+
+help_overview_footer = 
+
+greetings = ¡Hola!\nSoy {client_name}, un bot de transmisión de medios para TeamTalk. Fui desarrollado en Rust y estoy listo para ayudarte a transmitir desde Spotify, YouTube y enlaces de audio directos a tu canal de TeamTalk.\nPuedes usarme enviando comandos a través de mensajes privados o mensajes de canal.\nNota: si se usa en mensajes de canal, todos los comandos deben comenzar con una barra diagonal (/).\nAquí hay algunos comandos iniciales que puedes usar:\n- Escribe h para ver la lista completa de comandos y la guía de uso.\n- Escribe dci para ver la información de contacto del desarrollador.\n- Escribe log para mostrar el registro de cambios.\nSi encuentras algún problema o deseas proponer nuevas funciones para el bot, no dudes en contactar al desarrollador mediante la información de contacto disponible.\n¡Gracias por usar {client_name}! ¡Que tengas un excelente día!
+
+help_gs = gs\nMostrar mensaje de bienvenida y guía de inicio rápido.
+
+help_a = a\nMostrar información del bot.
+
+dev_contact_info = El desarrollador está abierto a comentarios y colaboraciones.\nPara reportar errores, sugerencias de desarrollo o cooperaciones, no dudes en contactar al desarrollador a través de los siguientes medios.\nEmail : surel@fauzanaja.com\nWhatsApp : wa.me/fauzan_january\nTelegram : t.me/fauzan_january\n\nObtén información interesante sobre proyectos, creaciones y más del desarrollador a través de los siguientes canales.\nCanal de WhatsApp : whatsapp.com/channel/0029VaFLXIO545upgh6w5h3K\nCanal de Telegram : t.me/+30wgCgIaC9UzNTFl\nSitio Web : FauzanAja.com\n\nApoya el trabajo del desarrollador con una taza de café.\nPaypal : donate@fauzanaja.com
+
+help_dci = dci\nMostrar información de contacto del desarrollador.
+
+help_log = log\nMostrar el registro de cambios.
+
+# Shown for an unrecognised command or help topic.
+help_unknown = Comando desconocido. Escribe h para ver la lista de comandos.
+
+help_play = p [consulta/url]\n  Reproducir pista de busqueda o enlace directo de inmediato (reemplaza la reproduccion actual).\n  Acepta nombres, enlaces de pistas, listas, albumes y enlaces directos.\n  Sin consulta: alterna reproducir o pausar la pista actual.\nEjemplos:\n  p photograph\n  p spotify:track:6rqhFgbbKwnb9MLmUQDhG6\n  p http://stream.zeno.fm/simplesample
+
+help_play_next = pn [consulta/url]\n  Anadir pistas de busqueda o enlace directo a la cola sin interrumpir la reproduccion actual.\n  Si no hay nada reproduciendose, comienza de inmediato.\nEjemplos:\n  pn photograph\n  pn spotify:track:6rqhFgbbKwnb9MLmUQDhG6
+
+help_stop = s\nDetener la reproduccion y vaciar la cola.
+
+help_next = n\nPasar a la pista siguiente.\nSi el autoplay esta activo y no queda nada, busca recomendaciones.
+
+help_prev = b\nVolver a la pista anterior.\nPasados 3 segundos de la pista, la reinicia en su lugar; pulsalo otra vez para retroceder de verdad. Usa rp para reiniciar siempre.
+
+help_replay = rp\nReiniciar la pista actual desde el principio.
+
+help_current = cti\nMostrar la pista actual con su posicion, duracion y modos activos.
+
+help_queue = q\n  q              Mostrar la pista actual y lo que viene.\n  qc             Quitar todas las pistas pendientes (mantiene la actual).\n  q rm <N>       Quitar la pista pendiente numero N.\n                 N=1 es la pista siguiente a la actual.\nLas pistas ya reproducidas no aparecen.\nEjemplos:\n  q rm 1         Quitar la siguiente pista pendiente\n  q rm 3         Quitar la tercera pista pendiente\n  qc             Quitar todo lo posterior a la pista actual
+
+help_mode = m [st|rt|tl|rtl]\n  st   Single Track (reproducir una vez y parar)\n  rt   Repeat Track (repetir pista actual)\n  tl   Track List (reproducir cola en orden)\n  rtl  Repeat Track List (repetir toda la cola)\n  m    Mostrar modo activo y opciones\nModo aleatorio separado: ver 'h sfl'.
+
+help_shuffle = sfl\nAlternar mezcla activada/desactivada para pistas pendientes (funciona junto con la repeticion).
+
+help_volume = v [0-100]\n  v          Ver el volumen actual\n  v 50       Poner el volumen al 50%\n  v50        Poner el volumen al 50% (sin espacio)\nEl volumen esta limitado por el maximo configurado.
+
+help_seek = sn / sb [segundos]\n  sn         Avanzar 10 segundos (por defecto)\n  sb         Retroceder 10 segundos (por defecto)\n  sn30       Avanzar 30 segundos\n  sb 5       Retroceder 5 segundos
+
+help_search = src <consulta>\n  Buscar y mostrar resultados. Despues:\n  <numero>   Elegir un resultado para anadir a la cola\n  c          Descartar los resultados\nEjemplo:\n  src photograph\n  2          Elegir el segundo resultado
+
+help_radio = ap\nAlternar modo autoplay activado/desactivado (recomendaciones automaticas al terminar la cola).
+
+help_link = gl\nObtener el enlace de la pista actual.\nAbrelo en la aplicacion del servicio o compartelo.
+
+help_stats = st\nTiempo activo del bot, pistas reproducidas en la sesion, tamano de la cola y volumen.
+
+help_gci = gci [ruta de canal]\nObtiene el ID numérico del canal actual o busca el ID a partir de la ruta.\nEjemplos:\n  gci\n  gci /Music Room\n  gci Public
+
+help_jc = jc <ruta/ID>[|clave]\nEntrar a un canal de TeamTalk por su ruta o ID (opcional: anadir '|' y clave si el canal esta protegido).\nEjemplo: jc 2 o jc /Music Room o jc /VIP Lounge|secreto123
+
+help_lang = cl [codigo]\nVer los idiomas disponibles o elegir tu propio idioma (solo te afecta a ti, no a todo el servidor).\nTu eleccion se recuerda por nombre de usuario.\ncl clear borra tu eleccion (sigue el idioma del servidor).\nEjemplo: cl de
+
+help_glang = cdl [codigo]\nFijar el idioma predeterminado del servidor (admin).\nQuien haya elegido su idioma con cl lo conserva.
+
+help_cci = cci\nCambiar la informacion del cliente del bot (apodo, estado, genero, nombre del cliente) de forma interactiva (admin).
+
+help_service = /spt / /ytv / /ytm\n  /spt    Cambiar el servicio activo a Spotify.\n  /ytv    Cambiar el servicio activo a YouTube Video.\n  /ytm    Cambiar el servicio activo a YouTube Music.\nComandos como p, pn, src, n y b usan el servicio activo.\nCambiar de servicio no interrumpe la reproduccion. Usa s para detener.
+
+help_restart = rs\nReiniciar el bot. Guarda la configuracion antes de salir.
+
+help_quit = sd\nApagar el bot. Guarda la configuracion antes de salir.
+
+help_srl = srl [1-20]\n  srl       Mostrar el limite actual de resultados de busqueda\n  srl <N>   Establecer el limite de resultados de busqueda (1-20)\nControla cuantos resultados devuelve el comando src.
+help_sds = sds\nLeer y modificar configuraciones de Servidor, Puerto, Usuario, Contrasena y Canal.
+help_lock = l\nBloquea o desbloquea el bot. Cuando esta bloqueado, solo los administradores pueden operarlo.
+help_hs = hs\nAlternar entre ocultar y mostrar el estado del bot.
+bot_locked = El bot está bloqueado.
+bot_locked_success = El bot está bloqueado.
+bot_unlocked_success = El bot está desbloqueado.
+status_hidden_success = Estado del bot ocultado.
+status_shown_success = Estado del bot mostrado.
+help_ucr = ucr\nAlterna entre activar y desactivar la respuesta a comandos desconocidos o no válidos.
+ucr_enabled = Respuesta a comandos desconocidos activada.
+ucr_disabled = Respuesta a comandos desconocidos desactivada.
+help_dl = dl\nDescarga interactivamente la pista actual o la lista de reproducción completa al canal.
+help_lrc = lrc [título de pista / artista]\n  Mostrar la letra de la pista actual o buscar por título / artista.\n  Si no se especifica título, busca la letra de la pista en reproducción.\nEjemplo:\n  lrc\n  lrc Bohemian Rhapsody\n  lrc Queen - Bohemian Rhapsody
+help_th = th [cantidad]\n  Reproducir los Top Hits más populares de hoy y reemplazar la cola existente.\n  Se puede especificar la cantidad de pistas (predeterminado: 10, rango: 1-50).\nEjemplos:\n  th\n  th 5\n  th 20
+help_liked = lk\nReproduce todas las canciones de la colección Canciones que te gustan de la cuenta de Spotify activa (solo servicio Spotify).
+dl_no_track = No se está reproduciendo nada actualmente.
+dl_live_stream = Las transmisiones en vivo no se pueden descargar.
+dl_no_permission = El bot no tiene permiso para subir archivos a este canal.
+dl_menu_target = Seleccione el destino de descarga:\n1. Solo la pista actual ({title})\n2. Todas las pistas en la lista/cola ({count} pistas)\n3. Cancelar\nEscriba el número de su opción (1-3):
+dl_menu_format = Seleccione el formato de audio:\n1. .mp3 (Compatibilidad universal)\n2. .m4a (Alta calidad)\n3. .wav (PCM sin comprimir)\n4. .ogg (Formato original de Spotify)\n5. Cancelar\nEscriba el número de su opción (1-5):
+dl_downloading = Descargando '{title}'...
+dl_uploading = Subiendo '{title}' al canal...
+dl_success = '{title}' subido con éxito al canal.
+dl_quota_exceeded = Error al subir '{title}': Se superó la cuota de disco del canal.
+dl_failed = Error al descargar o subir la pista: {error}
+dl_timeout = La sesión de descarga expiró por tiempo.
+dl_cancelled = Sesión de descarga cancelada.
+dl_invalid_choice = Opción no válida. Por favor escriba un número válido.
+dl_already_active = Ya hay una sesión de descarga en curso por otro usuario.
+
+# Top Hits
+loading_top_hits = Cargando {count} pistas Top Hits de {service}...
+top_hits_not_supported = Top Hits no es compatible con el servicio de transmisión directa.
+
+# Letras
+lyrics_loading = Buscando letra...
+lyrics_not_found = Letra no encontrada para: {query}
+lyrics_instrumental = Esta pista es instrumental (sin letra).
+lyrics_no_track = No hay ninguna pista reproduciéndose. Usa: lrc [título de pista / artista]
+lyrics_header = Letra: {track}
+
+# ID de Canal (gci)
+channel_id_current = ID del canal actual: {id}
+channel_id_path = ID del canal '{path}': {id}
+not_in_channel = El bot no está en un canal actualmente.
+
+# User Admin (ua)
+help_ua = ua [+nombre_de_usuario / -nombre_de_usuario]\n  Administrar la lista de administradores del bot.\n  +nombre_de_usuario agrega un admin, -nombre_de_usuario lo elimina.\n  Sin opciones, muestra la lista de administradores.\nEjemplos:\n  ua +carlos\n  ua -pedro\n  ua
+admin_added = El usuario '{username}' ahora es administrador.
+admin_removed = El usuario '{username}' ya no es administrador.
+admin_not_found = El usuario '{username}' no está en la lista de administradores.
+admin_already_exists = El usuario '{username}' ya es administrador.
+admin_list_empty = La lista de administradores está vacía.
+admin_list = Lista de administradores: {admins}
+

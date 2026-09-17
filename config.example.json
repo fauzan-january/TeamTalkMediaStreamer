@@ -1,0 +1,32 @@
+{
+  "host": "localhost",
+  "tcpPort": 10333,
+  "udpPort": 10333,
+  "encrypted": false,
+  "botName": "TeamTalkMediaStreamer",
+  "clientName": "TeamTalkMediaStreamer",
+  "username": "",
+  "password": "",
+  "ChannelName": "/",
+  "ChannelPassword": "",
+  "botGender": "neutral",
+  "customStatus": "",
+  "adminMode": "Both",
+  "admins": [],
+  "defaultLanguage": "id",
+  "defaultService": "Spotify",
+  "enabledServices": [
+    "spotify",
+    "youtube",
+    "direct"
+  ],
+  "spotifyQuality": "VERY_HIGH",
+  "spotifyEnableNormalization": true,
+  "volume": 50,
+  "maxVolume": 70,
+  "searchLimit": 5,
+  "radioEnabled": false,
+  "radioBatch": 3,
+  "youtubeCookiesFile": "",
+  "respondUnknownCommands": false
+}
