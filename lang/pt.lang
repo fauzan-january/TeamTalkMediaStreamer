@@ -60,6 +60,7 @@ mode_usage = Modo atual: {current_mode}\nst   Single Track\nrt   Repeat Track\nt
 search_usage = Uso: src <busca>
 search_results_header = Resultados da busca:
 search_results_footer = Digite um número para tocar, ou c para cancelar
+search_results_channel_footer = Digite /<número> para tocar, ou /c para cancelar (ex: /1)
 pick_usage = Uso: pick <número>
 pick_too_low = O número deve ser 1 ou maior
 search_limit_set = Limite de resultados da busca: {limit}

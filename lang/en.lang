@@ -110,13 +110,14 @@ mode_usage = Current mode: {current_mode}\nst   Single Track\nrt   Repeat Track\
 # Search and pick
 
 # Shown when search is used without a query and no results are waiting.
-search_usage = Usage: src <query>
+search_usage = Usage: src <track title>
 
 # First line above the numbered search results.
 search_results_header = Search results:
 
 # Last line under the numbered search results.
 search_results_footer = Type a number to play, or c to cancel
+search_results_channel_footer = Type /<number> to play, or /c to cancel (e.g. /1)
 
 # Shown when pick is used incorrectly.
 pick_usage = Usage: pick <number>

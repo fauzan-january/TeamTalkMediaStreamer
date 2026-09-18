@@ -51,9 +51,10 @@ mode_usage = Mode saat ini: {current_mode}\nst   Single Track\nrt   Repeat Track
 
 # Pencarian dan pemilihan
 
-search_usage = Penggunaan: src <pencarian>
+search_usage = Penggunaan: src <judul trek>
 search_results_header = Hasil pencarian:
 search_results_footer = Ketik nomor untuk memutar, atau c untuk membatalkan
+search_results_channel_footer = Ketik /<nomor> untuk memutar, atau /c untuk membatalkan (contoh: /1)
 pick_usage = Penggunaan: pick <nomor>
 pick_too_low = Nomor pilihan harus 1 atau lebih tinggi
 search_limit_set = Batas hasil pencarian: {limit}
@@ -176,7 +177,7 @@ help_volume = v [0-100]\n  v          Tampilkan volume saat ini\n  v 50       At
 
 help_seek = sn / sb [detik]\n  sn         Maju 10 detik (bawaan)\n  sb         Mundur 10 detik (bawaan)\n  sn30       Maju 30 detik\n  sb 5       Mundur 5 detik
 
-help_search = src <pencarian>\n  Cari dan tampilkan hasil. Kemudian:\n  <nomor>    Pilih hasil untuk dimasukkan ke antrean\n  c          Batalkan hasil pencarian\nContoh:\n  src photograph\n  2          Pilih hasil ke-2
+help_search = src <judul trek>\n  Cari dan tampilkan hasil pencarian. Kemudian:\n  <nomor>    Pilih hasil untuk dimasukkan ke antrean\n  c          Batalkan hasil pencarian\nCatatan:\n  • Di pesan saluran, awali dengan garis miring (contoh: /1 atau /c).\n  • Di pesan pribadi, cukup ketik angka langsung (contoh: 1 atau c).\nContoh:\n  src photograph\n  1          Pilih hasil ke-1 (atau /1 jika di saluran)
 
 help_radio = ap\nBeralih aktif/nonaktif autoplay (rekomendasi trek serupa secara otomatis saat antrean habis).
 

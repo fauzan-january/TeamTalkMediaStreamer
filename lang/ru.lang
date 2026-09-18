@@ -60,6 +60,7 @@ mode_usage = Текущий режим: {current_mode}\nst   Single Track\nrt   
 search_usage = Использование: src <запрос>
 search_results_header = Результаты поиска:
 search_results_footer = Введите номер для воспроизведения или c для отмены
+search_results_channel_footer = Введите /<номер> для воспроизведения или /c для отмены (напр. /1)
 pick_usage = Использование: pick <номер>
 pick_too_low = Номер должен быть 1 или больше
 search_limit_set = Лимит результатов поиска: {limit}
