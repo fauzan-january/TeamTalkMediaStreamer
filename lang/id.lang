@@ -12,8 +12,8 @@ lang_set = Bahasa diubah ke {language}
 
 searching = Mencari...
 loading_track = Memuat trek...
-nothing_to_play = Tidak ada yang dapat diputar. Gunakan: p <pencarian>
-play_next_usage = Tidak ada yang dapat ditambahkan ke antrean. Gunakan: pn <pencarian>
+nothing_to_play = Tidak ada yang dapat diputar. Gunakan: p <judul trek / url>
+play_next_usage = Tidak ada yang dapat ditambahkan ke antrean. Gunakan: pn <judul trek / url>
 restarting_track = Memulai ulang trek
 loading_liked = Memuat lagu yang disukai...
 nothing_playing = Tidak ada yang sedang diputar
@@ -152,9 +152,9 @@ help_log = log\nTampilkan riwayat perubahan.
 
 help_unknown = Perintah tidak dikenal. Ketik h untuk daftar perintah.
 
-help_play = p [pencarian/url]\n  Putar langsung trek dari pencarian atau URL (menimpa pemutaran saat ini).\n  Menerima nama trek, URL trek, playlist, album, atau tautan audio langsung.\n  Tanpa argumen: beralih putar atau jeda trek saat ini.\nContoh:\n  p photograph\n  p spotify:track:6rqhFgbbKwnb9MLmUQDhG6\n  p http://stream.zeno.fm/simplesample
+help_play = p [judul trek / url]\n  Putar langsung judul trek atau URL (menimpa pemutaran saat ini).\n  Menerima nama trek, URL trek, playlist, album, atau tautan audio langsung.\n  Tanpa argumen: beralih putar atau jeda trek saat ini.\nContoh:\n  p photograph\n  p spotify:track:6rqhFgbbKwnb9MLmUQDhG6\n  p http://stream.zeno.fm/simplesample
 
-help_play_next = pn [pencarian/url]\n  Tambahkan trek ke antrean dari pencarian atau URL langsung tanpa menghentikan pemutaran saat ini.\n  Jika tidak ada yang sedang diputar, trek akan langsung diputar.\nContoh:\n  pn photograph\n  pn spotify:track:6rqhFgbbKwnb9MLmUQDhG6
+help_play_next = pn [judul trek / url]\n  Tambahkan trek ke antrean dari judul trek atau URL langsung tanpa menghentikan pemutaran saat ini.\n  Jika tidak ada yang sedang diputar, trek akan langsung diputar.\nContoh:\n  pn photograph\n  pn spotify:track:6rqhFgbbKwnb9MLmUQDhG6
 
 help_stop = s\nHentikan pemutaran dan kosongkan antrean.
 

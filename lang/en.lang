@@ -22,8 +22,8 @@ searching = Searching...
 loading_track = Loading track...
 
 # Shown when there is nothing to play or resume.
-nothing_to_play = Nothing to play. Use: p <query>
-play_next_usage = Nothing to queue. Use: pn <query>
+nothing_to_play = Nothing to play. Use: p <track title / url>
+play_next_usage = Nothing to queue. Use: pn <track title / url>
 
 # Shown when the current track restarts from the beginning.
 restarting_track = Restarting track
@@ -299,9 +299,9 @@ help_log = log\nShow changelog.
 # Shown for an unrecognised command or help topic.
 help_unknown = Unknown command. Type h for the command list.
 
-help_play = p [query/url]\n  Play track from search query or URL immediately (replaces currently playing track).\n  Accepts track names, track URLs, playlist URLs, album URLs, and direct audio streams.\n  Without query: toggles play/pause on the current track.\nExamples:\n  p photograph\n  p spotify:track:6rqhFgbbKwnb9MLmUQDhG6\n  p http://stream.zeno.fm/simplesample
+help_play = p [track title / url]\n  Play track from track title or URL immediately (replaces currently playing track).\n  Accepts track names, track URLs, playlist URLs, album URLs, and direct audio streams.\n  Without argument: toggles play/pause on the current track.\nExamples:\n  p photograph\n  p spotify:track:6rqhFgbbKwnb9MLmUQDhG6\n  p http://stream.zeno.fm/simplesample
 
-help_play_next = pn [query/url]\n  Add tracks from search query or direct URL to the queue without interrupting current playback.\n  If nothing is playing, starts playback immediately.\nExamples:\n  pn photograph\n  pn spotify:track:6rqhFgbbKwnb9MLmUQDhG6
+help_play_next = pn [track title / url]\n  Add tracks from track title or direct URL to the queue without interrupting current playback.\n  If nothing is playing, starts playback immediately.\nExamples:\n  pn photograph\n  pn spotify:track:6rqhFgbbKwnb9MLmUQDhG6
 
 help_stop = s\nStop playback and clear the queue.
 
