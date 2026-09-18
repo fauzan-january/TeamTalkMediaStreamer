@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1] - 2026-09-18
+
+### Fixed
+- Fixed direct audio link / internet radio streaming playback by ensuring FFmpeg availability and supplying user-agent and ICY metadata headers.
+- Fixed YouTube and YouTube Music Top Hits (`th`) command to use dynamic popularity queries instead of expired static playlist IDs.
+- Fixed error prefix reporting in non-Spotify playback contexts.
+
 ## [1.0.0] - 2026-08-19
 
 **Upgrading on Linux: run `TeamTalkMediaStreamer service install` once after updating.**
