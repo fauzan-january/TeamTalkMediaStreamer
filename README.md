@@ -35,6 +35,7 @@ A bot can be restricted to specific services. Setup asks during configuration on
 ## Requirements
 
 - A **TeamTalk 5 server** to connect to, and a TeamTalk account for the bot.
+- **Linux runtime packages:** `libpulse0` (for TeamTalk SDK), `ffmpeg` (for direct stream decoding), and `ca-certificates` (for HTTPS stream TLS verification).
 
 ---
 
@@ -50,10 +51,13 @@ Download the latest build from the [**Releases page**](https://github.com/fauzan
 
 ### Linux (x86_64, Ubuntu 22.04+ / glibc)
 
-1. Install runtime dependency (`libpulse0`, a shared library the TeamTalk SDK links against):
+1. Install runtime dependencies:
    ```bash
-   sudo apt install -y libpulse0
+   sudo apt update && sudo apt install -y libpulse0 ffmpeg ca-certificates
    ```
+   - `libpulse0`: needed by the TeamTalk SDK.
+   - `ffmpeg`: needed for decoding direct audio streams and web radios.
+   - `ca-certificates`: needed for TLS/SSL certificate verification on HTTPS streams.
 2. Extract the archive:
    ```bash
    tar -xzf TeamTalkMediaStreamer-linux-x86_64.tar.gz
@@ -80,7 +84,7 @@ Download the latest build from the [**Releases page**](https://github.com/fauzan
 
 Runs on Raspberry Pi (Pi Zero 2 W through Pi 5) on **64-bit Raspberry Pi OS** (Debian 12 / bookworm or newer). Same steps as x86_64 using the `aarch64` archive:
 ```bash
-sudo apt install -y libpulse0
+sudo apt update && sudo apt install -y libpulse0 ffmpeg ca-certificates
 tar -xzf TeamTalkMediaStreamer-linux-aarch64.tar.gz
 ./TeamTalkMediaStreamer install
 ```

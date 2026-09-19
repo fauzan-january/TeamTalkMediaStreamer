@@ -23,7 +23,7 @@
   "spotifyQuality": "VERY_HIGH",
   "spotifyEnableNormalization": true,
   "volume": 50,
-  "maxVolume": 70,
+  "maxVolume": 100,
   "searchLimit": 5,
   "radioEnabled": false,
   "radioBatch": 3,

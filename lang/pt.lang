@@ -79,8 +79,12 @@ radio_status_off = Autoplay: DESLIGADO
 # Serviço
 
 already_on_service = Já está no {service}
-switched_service = Mudou para {service}
-service_not_enabled = {service} não está habilitado neste bot
+switched_service = Serviço atual: {service}
+service_not_enabled = {service} está desativado
+service_help = Serviço atual: {current_service}\nDisponíveis:\n{available_services}\nenvie sv SERVIÇO h para ajuda adicional.
+service_unknown = Serviço desconhecido.\n{help}
+service_disabled_tag = desativado
+service_no_additional_help = Este serviço não tem ajuda adicional
 
 # Informações do cliente (cci)
 cci_already_active = Uma sessão de informações do cliente já está em andamento.
@@ -98,7 +102,7 @@ cci_client_name_default_success = Nome do cliente do bot restaurado para o padr�
 cci_cancelled = Atualização das informações do cliente cancelada.
 cci_timeout = Tempo esgotado aguardando entrada. Atualização das informações cancelada.
 cci_invalid_choice = Opção inválida. Por favor, digite um número de opção válido.
-about = TeamTalk Media Streamer (Rust) v{version}\nBot de streaming de mídia para TeamTalk. Suporta reprodução de Spotify, YouTube e links de áudio diretos.\nModificado por Fauzan, S.Kom. | PT Kemenangan Digital Indonesia\nhttps://github.com/fauzan-january/TeamTalkMediaStreamer/\nDesenvolvedor original:\nhttps://github.com/LuciferM242/ttspotify-rs
+about = {client_name} v{version}\nBot de streaming de mídia para TeamTalk. Suporta reprodução de Spotify, YouTube e links de áudio diretos.\nModificado por Fauzan, S.Kom. | PT Kemenangan Digital Indonesia\nhttps://github.com/fauzan-january/TeamTalkMediaStreamer/\nDesenvolvedor original:\nhttps://github.com/LuciferM242/ttspotify-rs
 stats = Tempo ativo: {uptime}\nFaixas tocadas: {tracks}\nFila: {queue} faixas\nVolume: {volume}%
 status_idle = Digite "gs" para começar
 
@@ -137,11 +141,11 @@ failed_to_start = Falha ao iniciar a faixa: {track}
 # because they are what the user has to type.
 
 # The main help listing: playback, queue and mode sections.
-help_overview_playback = Ajuda de Uso do Bot:\n  gs : Mostrar mensagem de boas-vindas e guia de início rápido.\n  a : Mostrar informações do bot.\n  dci : Mostrar informações de contato do desenvolvedor.\n  log : Exibir histórico de alterações.\n  h [comando] : Mostrar ajuda detalhada de um comando (Exemplo: h q). Se nenhum comando for fornecido, mostrar lista de comandos disponíveis.\n  p [título da faixa / url] : Tocar faixa / URL. Se nenhum título / url for fornecido, tocar/pausar faixa atual.\n  pn [título da faixa / url] : Adicionar faixa / URL à fila para tocar a seguir. Repetir o comando adicionará à fila na sequência.\n  th [quantidade] : Tocar os Top Hits mais populares e substituir a fila atual.\n  lk : Tocar Músicas Curtidas (somente serviço Spotify).\n  src [título da faixa] : Buscar e escolher uma faixa dos resultados para tocar.\n  rp : Reiniciar a faixa atual desde o início.\n  s : Parar a reprodução e limpar a fila atual.\n  n : Tocar próxima faixa.\n  b : Tocar faixa anterior.\n  sn [valor] : Avançar a reprodução pelos segundos especificados.\n  sb [valor] : Voltar a reprodução pelos segundos especificados.\n  cti : Mostrar informações da faixa atual.\n  q : Mostrar a fila atual.\n  qc : Remover todas as faixas da fila de uma vez.\n  q rm <número do índice> : Remover uma faixa da fila pelo seu número de índice.\n  v [0-100] : Ajustar volume. Se nenhum valor for fornecido, mostrar volume atual.\n  m [st / rt / tl / rtl] : Ajustar modo de reprodução. Se nenhum modo for fornecido, mostrar modo ativo e lista de modos.\n  sfl : Ativar / desativar reprodução aleatória da fila.\n  ap : Ativar / desativar autoplay (recomendações automáticas conforme a faixa atual).\n  dl : Baixar faixa ou playlist atual para o canal.\n  gl : Obter URL da faixa atual.\n  lrc [título da faixa / artista] : Mostrar a letra da faixa. Se nenhum título / artista for fornecido, mostrar a letra da faixa em reprodução.\n  srl [1-20] : Ajustar limite de resultados de busca. Se nenhum valor for fornecido, mostrar limite atual.
+help_overview_playback = Ajuda de Uso do Bot:\n  gs : Mostrar mensagem de boas-vindas e guia de início rápido.\n  a : Mostrar informações do bot.\n  dci : Mostrar informações de contato do desenvolvedor.\n  log : Exibir histórico de alterações.\n  h [comando] : Mostrar ajuda detalhada de um comando (Exemplo: h q). Se nenhum comando for fornecido, mostrar lista de comandos disponíveis.\n  p [faixa / url] : Tocar faixa / URL. Se nenhuma faixa / url for fornecida, tocar/pausar faixa atual.\n  pn [faixa / url] : Adicionar faixa / URL à fila para tocar a seguir. Repetir o comando adicionará à fila na sequência.\n  th [quantidade] : Tocar os Top Hits mais populares e substituir a fila atual.\n  lk : Tocar Músicas Curtidas (somente serviço Spotify).\n  src [faixa] : Buscar e escolher uma faixa dos resultados para tocar.\n  rp : Reiniciar a faixa atual desde o início.\n  s : Parar a reprodução e limpar a fila atual.\n  n : Tocar próxima faixa.\n  b : Tocar faixa anterior.\n  sn [valor] : Avançar a reprodução pelos segundos especificados.\n  sb [valor] : Voltar a reprodução pelos segundos especificados.\n  cti : Mostrar informações da faixa atual.\n  q : Mostrar a fila atual.\n  qc : Remover todas as faixas da fila de uma vez.\n  q rm <número do índice> : Remover uma faixa da fila pelo seu número de índice.\n  v [0-100] : Ajustar volume. Se nenhum valor for fornecido, mostrar volume atual.\n  m [st / rt / tl / rtl] : Ajustar modo de reprodução. Se nenhum modo for fornecido, mostrar modo ativo e lista de modos.\n  sfl : Ativar / desativar reprodução aleatória da fila.\n  ap : Ativar / desativar autoplay (recomendações automáticas conforme a faixa atual).\n  dl : Baixar faixa ou playlist atual para o canal.\n  gl : Obter URL da faixa atual.\n  lrc [faixa / artista] : Mostrar a letra da faixa. Se nenhum título / artista for fornecido, mostrar a letra da faixa em reprodução.\n  srl [1-20] : Ajustar limite de resultados de busca. Se nenhum valor for fornecido, mostrar limite atual.
 
 help_overview_spotify = 
 
-help_overview_rest = Serviços (ativo no momento: {service}).\n  spt : Mudar para o Spotify.\n  ytv : Mudar para o YouTube Video.\n  ytm : Mudar para o YouTube Music.\n  st : Mostrar tempo ativo e estatísticas da sessão.\n  cl [código de idioma] : Definir idioma do bot (apenas para você, não afetará outros usuários). Se nenhum código for fornecido, mostrar idioma atual.
+help_overview_rest = Serviços (ativo no momento: {service}).\n  sv [serviço] : Seleciona ou exibe o serviço de reprodução (Spotify, YouTube Video, YouTube Music).\n  st : Mostrar tempo ativo e estatísticas da sessão.\n  cl [código de idioma] : Definir idioma do bot (apenas para você, não afetará outros usuários). Se nenhum código for fornecido, mostrar idioma atual.
 
 help_overview_admin = Comandos Exclusivos para Administradores:\n  sds : Modificar configuração do bot (como informações do servidor, usuário e canal).\n  cci : Mudar informações do cliente do bot (como apelido, status, gênero e nome do cliente).\n  cdl [código de idioma] : Definir idioma padrão do bot. Se nenhum código for fornecido, mostrar idioma padrão atual.\n  ua [+nome_de_usuario / -nome_de_usuario] : Gerenciar lista de administradores do bot.\n  gci [caminho do canal] : Obter ID do canal atual ou pelo caminho especificado.\n  jc <caminho / id do canal|senha> : Entrar em um canal específico. Exemplo: jc public|123.\n  hs : Ocultar / mostrar status do bot.\n  l : Bloquear / desbloquear bot.\n  ucr : Ativar / desativar resposta para comandos desconhecidos.\n  rs : Reiniciar bot.\n  sd : Desligar bot.
 
@@ -204,7 +208,7 @@ help_glang = cdl [codigo]\nDefinir o idioma padrao do servidor (admin).\nQuem es
 
 help_cci = cci\nMudar as informacoes do cliente do bot (apelido, status, genero, nome do cliente) interativamente (admin).
 
-help_service = /spt / /ytv / /ytm\n  /spt    Mudar o servico ativo para Spotify.\n  /ytv    Mudar o servico ativo para YouTube Video.\n  /ytm    Mudar o servico ativo para YouTube Music.\nComandos como p, pn, src, n e b usam o servico ativo.\nMudar de servico nao interrompe a reproducao. Use s para parar.
+help_service = sv [serviço]\n  sv        Mostra o serviço atual e a lista de serviços disponíveis.\n  sv spt    Muda para o Spotify.\n  sv ytv    Muda para o YouTube Video.\n  sv ytm    Muda para o YouTube Music.\nComandos como p, pn, src, n e b usam o servico ativo.\nMudar de servico nao interrompe a reproducao. Use s para parar.
 
 help_restart = rs\nReiniciar o bot. Salva a configuracao antes de sair.
 
@@ -223,8 +227,8 @@ help_ucr = ucr\nAlterna entre ativar e desativar a resposta para comandos descon
 ucr_enabled = Resposta para comandos desconhecidos ativada.
 ucr_disabled = Resposta para comandos desconhecidos desativada.
 help_dl = dl\nBaixe interativamente a faixa atual ou a lista de reprodução inteira para o canal.
-help_lrc = lrc [título da faixa / artista]\n  Mostrar a letra da faixa atual ou buscar por título / artista.\n  Se nenhum título for fornecido, obtém a letra da faixa em reprodução.\nExemplo:\n  lrc\n  lrc Bohemian Rhapsody\n  lrc Queen - Bohemian Rhapsody
-help_th = th [quantidade]\n  Tocar os Top Hits mais populares de hoje e substituir a fila existente.\n  O número de faixas pode ser especificado (padrão: 10, intervalo: 1-50).\nExemplos:\n  th\n  th 5\n  th 20
+help_lrc = lrc [faixa / artista]\n  Mostrar a letra da faixa atual ou buscar por faixa / artista.\n  Se nenhum título for fornecido, obtém a letra da faixa em reprodução.\nExemplo:\n  lrc\n  lrc Bohemian Rhapsody\n  lrc Bohemian Rhapsody - Queen
+help_th = th [quantidade] [país]\n  Tocar os Top Hits mais populares de hoje e substituir a fila existente.\n  O número de faixas pode ser especificado (padrão: 10, intervalo: 1-100).\n  O código ou nome do país é opcional (padrão: Global).\nExemplos:\n  th\n  th 20\n  th id\n  th 50 id\n  th 100 us
 help_liked = lk\nToca todas as faixas da coleção Músicas Curtidas da conta do Spotify ativa (somente serviço Spotify).
 dl_no_track = Nada está tocando no momento.
 dl_live_stream = Transmissões ao vivo não podem ser baixadas.
@@ -242,14 +246,14 @@ dl_invalid_choice = Opção inválida. Digite um número válido.
 dl_already_active = Uma sessão de download já está em andamento por outro usuário.
 
 # Top Hits
-loading_top_hits = Carregando {count} faixas Top Hits de {service}...
+loading_top_hits = Carregando {count} faixas Top Hits {country} de {service}...
 top_hits_not_supported = Top Hits não é compatível com o serviço de transmissão direta.
 
 # Letras
 lyrics_loading = Buscando letra...
 lyrics_not_found = Letra não encontrada para: {query}
 lyrics_instrumental = Esta faixa é instrumental (sem letra).
-lyrics_no_track = Nenhuma faixa está tocando no momento. Use: lrc [título da faixa / artista]
+lyrics_no_track = Nenhuma faixa está tocando no momento. Use: lrc [faixa / artista]
 lyrics_header = Letra: {track}
 
 # ID do Canal (gci)

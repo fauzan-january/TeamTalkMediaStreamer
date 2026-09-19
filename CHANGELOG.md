@@ -1,11 +1,28 @@
 # Changelog
 
+## [1.0.2] - 2026-09-19
+
+### Added & Improved
+- Filter anti-kompilasi/full album pada rekomendasi otomatis YouTube (batas maksimal 15 menit & deteksi kata kunci album/kompilasi).
+- Artist Spacing Guard untuk mencegah pemutaran lagu berturut-turut dari artis yang sama pada antrean rekomendasi.
+- Penyeragaman format tampilan lagu menjadi `Judul - Artis` secara konsisten.
+- Penyederhanaan nama default client handshake menjadi `TeamTalk5MediaStreamer (<OS Details>)`.
+- Pengaturan default volume maksimal (`maxVolume`) dinaikkan menjadi 100.
+
+### Fixed
+- Optimalisasi pemutar audio langsung/streaming di Linux & Windows (socket timeout 15 detik, auto-reconnect, dan deteksi path FFmpeg Linux).
+
 ## [1.0.1] - 2026-09-18
 
 ### Fixed
-- Fixed direct audio link / internet radio streaming playback by ensuring FFmpeg availability and supplying user-agent and ICY metadata headers.
+- Fixed direct audio link / internet radio streaming playback by ensuring portable FFmpeg availability and supplying browser user-agent and ICY metadata headers.
 - Fixed YouTube and YouTube Music Top Hits (`th`) command to use dynamic popularity queries instead of expired static playlist IDs.
 - Fixed error prefix reporting in non-Spotify playback contexts.
+- Fixed minisign signature hashing format in GitHub Actions CI workflow to ensure compatibility with `TeamTalkMediaStreamer update`.
+
+### Changed & Improved
+- Standardized play command usage hints across bot help and error messages to `<judul trek / url>` (`<track title / url>`).
+- Added channel-specific guidance for search results (`src <judul trek>`): prompts users in channel chat to use slash prefix (`/<nomor>` or `/c`) while keeping simple number input (`1` or `c`) in private messages.
 
 ## [1.0.0] - 2026-08-19
 
