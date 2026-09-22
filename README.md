@@ -58,13 +58,20 @@ Download the latest build from the [**Releases page**](https://github.com/fauzan
    - `libpulse0`: needed by the TeamTalk SDK.
    - `ffmpeg`: needed for decoding direct audio streams and web radios.
    - `ca-certificates`: needed for TLS/SSL certificate verification on HTTPS streams.
-2. Extract the archive:
+2. Download and extract the archive TeamTalkMediaStreamer:
+Download from GitHub:
+   ```bash
+   wget https://github.com/fauzan-january/TeamTalkMediaStreamer/releases/download/v1.0.2/TeamTalkMediaStreamer-linux-x86_64.tar.gz
+   ```
+   Extract the archive:
    ```bash
    tar -xzf TeamTalkMediaStreamer-linux-x86_64.tar.gz
    ```
 3. Put the binary on your `PATH` (installs itself into `~/.local/bin`):
    ```bash
    ./TeamTalkMediaStreamer install
+   echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.profile
+export PATH="$HOME/.local/bin:$PATH"
    ```
 4. Run the interactive setup wizard:
    ```bash
@@ -85,8 +92,11 @@ Download the latest build from the [**Releases page**](https://github.com/fauzan
 Runs on Raspberry Pi (Pi Zero 2 W through Pi 5) on **64-bit Raspberry Pi OS** (Debian 12 / bookworm or newer). Same steps as x86_64 using the `aarch64` archive:
 ```bash
 sudo apt update && sudo apt install -y libpulse0 ffmpeg ca-certificates
+wget https://github.com/fauzan-january/TeamTalkMediaStreamer/releases/download/v1.0.2/TeamTalkMediaStreamer-linux-x86_64.tar.gz
 tar -xzf TeamTalkMediaStreamer-linux-aarch64.tar.gz
 ./TeamTalkMediaStreamer install
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.profile
+export PATH="$HOME/.local/bin:$PATH"
 ```
 
 ---
