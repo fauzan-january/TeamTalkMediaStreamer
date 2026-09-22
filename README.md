@@ -59,6 +59,7 @@ Download the latest build from the [**Releases page**](https://github.com/fauzan
    - `ffmpeg`: needed for decoding direct audio streams and web radios.
    - `ca-certificates`: needed for TLS/SSL certificate verification on HTTPS streams.
 2. Download and extract the archive TeamTalkMediaStreamer:
+
 Download from GitHub:
    ```bash
    wget https://github.com/fauzan-january/TeamTalkMediaStreamer/releases/download/v1.0.2/TeamTalkMediaStreamer-linux-x86_64.tar.gz
